@@ -9,7 +9,7 @@ app.use(function(req, res, next){
 
 app.use(express.static(__dirname + '/public'));
 
-var server = app.listen(process.env.PORT, function() {
+var server = app.listen(process.env.PORT || 5000, function() {
   console.log("[Server] Listening at %s", server.address().port);
   console.log("IP Address: %s", process.env.IP);
 });
