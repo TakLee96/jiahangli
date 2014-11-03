@@ -1,0 +1,29 @@
+{
+  "name": "jiahangli",
+  "version": "0.0.1",
+  "description": "JiaHang(Tak) Li's Personal Website",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodejs server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakLee96/jiahangli"
+  },
+  "keywords": [
+    "jiahang",
+    "li",
+    "personal website",
+    "tak"
+  ],
+  "author": "JiaHang(Tak) Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakLee96/jiahangli/issues"
+  },
+  "homepage": "https://github.com/TakLee96/jiahangli"
+}
