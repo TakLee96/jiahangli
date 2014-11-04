@@ -1,19 +1,98 @@
 <!DOCTYPE html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JiaHang(Tak)'s Personal Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  </head>
+    <body role="document">
+      <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 
-<html>
+      <nav class="navbar navbar-inverse navbar-fixed-top row" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="#">JiaHang(Tak) Li</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header">Information</li>
+                  <li><a href="https://drive.google.com/file/d/0ByzWduryWm9FY2p6N2JoYi13Wlk/view?usp=sharing">Resume</a></li>
+                  <li><a href="https://www.linkedin.com/pub/jiahang-li/a4/132/11b">LinkedIn</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Developer</li>
+                  <li><a href="https://github.com/TakLee96">Git Repo</a></li>
+                  <li><a href="https://github.com/TakLee96/jiahangli">View Source</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav><!-- nav navbar -->
 
-<head>
-  <meta charset='UTF-8'>
-  <link rel='stylesheet' href='/resource/css/stylesheet.css'>
-</head>
+      <main class="container theme-showcase" role="main">
+        <div id="about" class="row">
+          <p>Who am I</p>
+          <p>Developer • Hacker • Learner<p>
+        </div><!-- div about -->
 
-<body>
-  <div class='container'>
+        <div id="experience">
+          <header class="page-header">
+            <p>Experience</p>
+          </header>
+          <article id="baybithack" class="row">
+            <header>Bay BitHack</header>
+          </article>
+          <article id="calhacks" class="row">
+            <header>Cal Hacks</header>
+          </article>
+          <article id="evernote" class="row">
+            <header>Evernote Hackathon</header>
+          </article>
+          <article id="sunshine" class="row">
+            <header>Sunshine Library Internship</header>
+          </article>
+        </div><!-- div experience -->
 
-    <p>Hello World!</p>
+        <div id="education" class="row">
+          <header class="page-header">
+            <p>Experience</p>
+          </header>
+        </div><!-- div education -->
+      </main><!-- main container -->
 
-  </div>
-  <script src='/resource/js/index.js'></script>
-</body>
+      <footer id="contact" class="navbar navbar-inverse navbar-fixed-bottom row" role="footer">
+        <div class="container">
+          <div class="navbar-brand">Contact</div>
+        </div>
+      </footer>
 
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/html5-boilerplate/js/plugins.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
 </html>
