@@ -22,11 +22,14 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-      <nav class="navbar navbar-inverse navbar-fixed-top row" role="navigation">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">JiaHang(Tak) Li</a>
           </div>
@@ -39,13 +42,10 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown-header">Information</li>
                   <li><a href="https://drive.google.com/file/d/0ByzWduryWm9FY2p6N2JoYi13Wlk/view?usp=sharing">Resume</a></li>
                   <li><a href="https://www.linkedin.com/pub/jiahang-li/a4/132/11b">LinkedIn</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Developer</li>
                   <li><a href="https://github.com/TakLee96">Git Repo</a></li>
-                  <li><a href="https://github.com/TakLee96/jiahangli">View Source</a></li>
+                  <li><a href="https://github.com/TakLee96/jiahangli">Source</a></li>
                 </ul>
               </li>
             </ul>
@@ -55,12 +55,13 @@
 
       <main class="container theme-showcase" role="main">
         <div id="about" class="row">
-          <p>Who am I</p>
-          <p>Developer • Hacker • Learner<p>
+          <p id="shitty">This page is still under development. Great Things Comming Soon!</p>
+          <p class="undeveloped">Who am I</p>
+          <p class="undeveloped">Developer • Hacker • Learner<p>
         </div><!-- div about -->
 
-        <div id="experience">
-          <header class="page-header">
+        <div id="experience" class="undeveloped">
+          <header class="page-header" class="row">
             <p>Experience</p>
           </header>
           <article id="baybithack" class="row">
@@ -77,16 +78,17 @@
           </article>
         </div><!-- div experience -->
 
-        <div id="education" class="row">
+        <div id="education" class="undeveloped">
           <header class="page-header">
-            <p>Experience</p>
+            <p>Education</p>
           </header>
         </div><!-- div education -->
       </main><!-- main container -->
 
-      <footer id="contact" class="navbar navbar-inverse navbar-fixed-bottom row" role="footer">
+      <footer id="contact" class="navbar navbar-inverse navbar-fixed-bottom" role="footer">
         <div class="container">
-          <div class="navbar-brand">Contact</div>
+          <div class="navbar-brand col-md-6">Phone: +1 (510) 697-1809</div>
+          <div class="navbar-brand col-md-6">Email: jiahang_li@berkeley.edu</div>
         </div>
       </footer>
 
@@ -94,6 +96,6 @@
       <script src="bower_components/html5-boilerplate/js/plugins.js"></script>
       <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>
-      
+
     </body>
 </html>
