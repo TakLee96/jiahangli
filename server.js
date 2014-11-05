@@ -3,7 +3,10 @@ var express = require('express');
 var app = express();
 
 app.use(function(req, res, next){
-  console.log(req.method, req.url);
+  console.log("[%s] %s -> %s", 
+	      Date().slice(0, 24), 
+	      req.method, 
+	      req.url);
   next();
 });
 
