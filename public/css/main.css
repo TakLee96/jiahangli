@@ -11,3 +11,7 @@ body {
 .undeveloped {
   visibility: hidden;
 }
+
+.placeholder {
+  height: 60px;
+}
