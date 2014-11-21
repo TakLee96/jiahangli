@@ -3,11 +3,9 @@ var express = require('express');
 var app = express();
 
 app.use(function(req, res, next){
-  console.log("[%s] %s -> %s", 
-	      Date().slice(0, 24), 
-	      req.method, 
-	      req.url);
-  next();
+  console.log("[%s] %s -> %s", Date().slice(0, 24),
+	            req.method, req.url);
+  if (next) next();
 });
 
 app.use(express.static(__dirname + '/public'));

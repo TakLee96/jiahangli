@@ -1,17 +1,44 @@
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-
-#shitty {
-  text-align: center;
-  font-size: 20pt;
+  padding-top: 51px;
 }
 
 .undeveloped {
-  visibility: hidden;
+  display: None;
 }
 
-.placeholder {
-  height: 60px;
+.font-1 {
+  font-family: "Avenir Next W02 Thin", "Avenir Next",
+               "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+#about {
+  background-image: url('../img/main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-origin: content-box;
+  text-align: center;
+}
+
+#about-verticalCenter {
+  background-color: rgba(0, 0, 0, 0.60);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+#about-intro {
+  font-size: 40pt;
+}
+
+#about-category, #about-button {
+  font-size: 20pt;
+}
+
+#about-button-wrapper {
+  position: relative;
+  transform: translateY(-50%);
+  /*top: 60%;*/
 }

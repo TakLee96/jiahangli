@@ -13,129 +13,141 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
     <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-    <body role="document">
-      <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
 
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">JiaHang(Tak) Li</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="https://drive.google.com/file/d/0ByzWduryWm9FY2p6N2JoYi13Wlk/view?usp=sharing" target="_blank">Resume</a></li>
-                  <li><a href="https://www.linkedin.com/pub/jiahang-li/a4/132/11b" target="_blank">LinkedIn</a></li>
-                  <li><a href="https://github.com/TakLee96" target="_blank">Git Repo</a></li>
-                  <li><a href="https://github.com/TakLee96/jiahangli" target="_blank">Source</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
+  <body role="document" onLoad="handleOnResize()" onResize="handleOnResize()">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser.
+      Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top font-1" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Li, JiaHang(Tak)</a>
         </div>
-      </nav><!-- nav navbar -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://drive.google.com/file/d/0ByzWduryWm9FY2p6N2JoYi13Wlk/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a href="https://www.linkedin.com/pub/jiahang-li/a4/132/11b" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/TakLee96" target="_blank">Git Repo</a></li>
+                <li><a href="https://github.com/TakLee96/jiahangli" target="_blank">Source</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav><!-- nav navbar -->
 
-      <main class="container theme-showcase" role="main">
-        <div id="about" class="row">
-          <h1 id="shitty">This page is still under development. Great Things Comming Soon!</h1>
-          <p class="undeveloped">Full Stack Software Engineer • Web Developer • Passionate Hacker • Excited Learner<p>
-        </div><!-- div about -->
+    <div id="about" class="font-1">
+      <div id="about-verticalCenter">
+        <p id="about-intro">Hello, This is Li, JiaHang(Tak)'s Personal Website</p>
+        <p id="about-category">Full Stack Web Developer • Software Engineer •
+                               Passionate Hacker • Excited Learner<p>
+      </div>
+      <div id="about-button-wrapper">
+        <button onClick="handleAboutButtonOnClick()"
+                class="btn btn-primary" id="about-button">
+          <span class="font-1">Get Started</span>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+      <div>
+    </div><!-- div about -->
 
-        <div id="experience" class="undeveloped">
-          <h2 class="page-header">
-            <p>Experience</p>
-          </h2>
-          <article id="baybithack" class="row">
-            <h3><a href="http://baybithack.com" target="_blank">Bay BitHack</a></h3>
-            <time></time>
-            <p>{{Bay BitHack Introduction}}</p>
-            <h4>Out Product: TxtCoin</h4>
-            <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a></p>
-            <p>{{TxtCoin Introduction}}</p>
-          </article>
-          <article id="calhacks" class="row">
-            <h3><a href="http://www.calhacks.io" target="_blank">Cal Hacks</a></h3>
-            <p>{{Cal BitHack Introduction}}</p>
-            <h4>Out Product: WePay</h4>
-            <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a>, Ryan</p>
-            <p>{{WePay Introduction}}</p>
-          </article>
-          <article id="evernote" class="row">
-            <h3>Evernote Hackathon</h3>
-            <p>{{Evernote Hackathon Introduction}}</p>
-            <h4>Out Product: NeverForget</h4>
-            <p>Team Members: Me, 3 others</p>
-            <p>{{NeverForget Introduction}}</p>
-          </article>
-          <article id="sunshine" class="row">
-            <h3>Sunshine Library Internship</h3>
-            <p>{{Sunshine Library Internship Introduction}}</p>
-          </article>
-        </div><!-- div experience -->
+    <main class="container theme-showcase" role="main">
+      <div id="experience" class="undeveloped">
+        <h2 class="transition">
+          <p>Experience</p>
+        </h2>
+        <article id="herocityhack" class="row page">
+          <h3><a href="http://" target="_blank">Hero City Hack</a></h3>
+          <time></time>
+          <p>{{Hero City Hack Introduction}}</p>
+          <h4>Out Product: BitRun</h4>
+          <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a> and Ryan</p>
+          <p>{{BitRun Introduction}}</p>
+        </article>
+        <article id="baybithack" class="row page">
+          <h3><a href="http://baybithack.com" target="_blank">Bay BitHack</a></h3>
+          <time></time>
+          <p>{{Bay BitHack Introduction}}</p>
+          <h4>Out Product: TxtCoin</h4>
+          <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a></p>
+          <p>{{TxtCoin Introduction}}</p>
+        </article>
+        <article id="calhacks" class="row page">
+          <h3><a href="http://www.calhacks.io" target="_blank">Cal Hacks</a></h3>
+          <p>{{Cal BitHack Introduction}}</p>
+          <h4>Out Product: WePay</h4>
+          <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a>, Ryan</p>
+          <p>{{WePay Introduction}}</p>
+        </article>
+        <article id="evernote" class="row page">
+          <h3>Evernote Hackathon</h3>
+          <p>{{Evernote Hackathon Introduction}}</p>
+          <h4>Out Product: NeverForget</h4>
+          <p>Team Members: Me, 3 others</p>
+          <p>{{NeverForget Introduction}}</p>
+        </article>
+        <article id="sunshine" class="row page">
+          <h3>Sunshine Library Internship</h3>
+          <p>{{Sunshine Library Internship Introduction}}</p>
+        </article>
+      </div><!-- div experience -->
 
-        <div id="education" class="undeveloped">
-          <header class="page-header">
-            <h2>Education</h2>
-          </header>
-          <article class="row">
-            <h3>University of California at Berkeley</h3>
-          </article>
-          <article class="row">
-            <h3>Stanford University</h3>
-          </article>
-          <article class="row">
-            <h3>Beijing No.4 High School</h3>
-          </article>
-        </div><!-- div education -->
+      <div id="education" class="undeveloped">
+        <header class="transition">
+          <h2>Education</h2>
+        </header>
+        <article class="row page">
+          <h3>University of California at Berkeley</h3>
+        </article>
+        <article class="row page">
+          <h3>Stanford University</h3>
+        </article>
+        <article class="row page">
+          <h3>Beijing No.4 High School</h3>
+        </article>
+      </div><!-- div education -->
 
-        <div id="skills" class="undeveloped">
-          <header class="page-header">
-            <h2>Skills</h2>
-          </header>
-          <article class="row">
-            <h3>Programming Languages</h3>
-          </article>
-          <article class="row">
-            <h3>Full Stack Web</h3>
-          </article>
-          <article class="row">
-            <h3>Version and Source Control</h3>
-          </article>
-        </div>
+      <div id="skills" class="undeveloped page">
+        <header>
+          <h2>Skills</h2>
+        </header>
+        <article class="row">
+          <h3>Programming Languages</h3>
+        </article>
+        <article class="row">
+          <h3>Full Stack Web</h3>
+        </article>
+        <article class="row">
+          <h3>Version and Source Control</h3>
+        </article>
+      </div>
+    </main><!-- main container -->
 
-        <div class="row placeholder"></div>
-      </main><!-- main container -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/html5-boilerplate/js/plugins.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
-      <footer id="contact" class="navbar navbar-inverse navbar-fixed-bottom" role="footer">
-        <div class="container">
-          <div class="navbar-brand col-md-6">Phone: +1 (510) 697-1809</div>
-          <div class="navbar-brand col-md-6">Email: jiahang_li@berkeley.edu</div>
-        </div>
-      </footer>
-
-      <script src="bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="bower_components/html5-boilerplate/js/plugins.js"></script>
-      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
-
-    </body>
+  </body>
 </html>
