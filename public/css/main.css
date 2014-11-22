@@ -30,15 +30,15 @@ body {
 }
 
 #about-intro {
-  font-size: 40pt;
+  font-size: 20pt;
 }
 
 #about-category, #about-button {
-  font-size: 20pt;
+  font-size: 15pt;
 }
 
 #about-button-wrapper {
   position: relative;
   transform: translateY(-50%);
-  /*top: 60%;*/
+  top: 60%;
 }

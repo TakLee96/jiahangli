@@ -19,10 +19,6 @@ window.handleOnResize = function () {
 window.renderComponent = function (stdh, stdw) {
   var about_height = parseFloat(stdh) - NAV_BAR_HEIGHT;
   $('#about').css('height', about_height + 'px');
-  if (parseFloat(stdw) < THRESHOLD_WIDTH)
-    $('#about-button-wrapper').css('top', '30%');
-  else
-    $('#about-button-wrapper').css('top', '60%');
 };
 
 window.handleAboutButtonOnClick = function () {
