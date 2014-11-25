@@ -30,11 +30,11 @@ body {
 }
 
 #about-intro {
-  font-size: 20pt;
+  font-size: 4vw;
 }
 
 #about-category, #about-button {
-  font-size: 15pt;
+  font-size: 2vw;
 }
 
 #about-button-wrapper {
