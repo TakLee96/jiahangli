@@ -21,14 +21,14 @@
 
   <body role="document" onLoad="handleOnResize()" onResize="handleOnResize()">
     <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser.
-      Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      <p class="bsehappy">You are using an <strong>outdated</strong> bser.
+      Please <a href="http://bsehappy.com/">upgrade your bser</a>
       to improve your experience.</p>
     <![endif]-->
 
     <nav class="navbar navbar-inverse navbar-fixed-top font-1" role="navigation">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-div">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -69,80 +69,85 @@
           <span class="font-1">Get Started</span>
           <span class="glyphicon glyphicon-chevron-down"></span>
         </button>
-      <div>
+      </div>
     </div><!-- div about -->
 
-    <main class="container theme-showcase" role="main">
-      <div id="experience" class="undeveloped">
-        <h2 class="transition">
-          <p>Experience</p>
-        </h2>
-        <article id="herocityhack" class="row page">
+    <div id="experience" role="tabpanel">
+      <h2>Experience</h2>
+      <!-- Nav tabs -->
+      <ul id="experience-nav" class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#herocityhack" aria-controls="herocityhack" role="tab" data-toggle="tab">Hero City Hack</a></li>
+        <li role="presentation"><a href="#baybithack" aria-controls="baybithack" role="tab" data-toggle="tab">Bay Bithack</a></li>
+        <li role="presentation"><a href="#calhacks" aria-controls="calhacks" role="tab" data-toggle="tab">Cal Hacks</a></li>
+        <li role="presentation"><a href="#evernote" aria-controls="evernote" role="tab" data-toggle="tab">Evernote Hackathon</a></li>
+        <li role="presentation"><a href="#sunshine" aria-controls="sunshine" role="tab" data-toggle="tab">Sunshine Library Internship</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="herocityhack" role="tabpanel" class="tab-pane active">
           <h3><a href="http://" target="_blank">Hero City Hack</a></h3>
           <time></time>
           <p>{{Hero City Hack Introduction}}</p>
           <h4>Out Product: BitRun</h4>
           <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a> and Ryan</p>
           <p>{{BitRun Introduction}}</p>
-        </article>
-        <article id="baybithack" class="row page">
+        </div>
+        <div id="baybithack" role="tabpanel" class="tab-pane">
           <h3><a href="http://baybithack.com" target="_blank">Bay BitHack</a></h3>
           <time></time>
           <p>{{Bay BitHack Introduction}}</p>
           <h4>Out Product: TxtCoin</h4>
           <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a></p>
           <p>{{TxtCoin Introduction}}</p>
-        </article>
-        <article id="calhacks" class="row page">
+        </div>
+        <div id="calhacks" role="tabpanel" class="tab-pane">
           <h3><a href="http://www.calhacks.io" target="_blank">Cal Hacks</a></h3>
           <p>{{Cal BitHack Introduction}}</p>
           <h4>Out Product: WePay</h4>
           <p>Team Members: Me, <a href="http://philip9.com" target="_blank">Philip</a>, Ryan</p>
           <p>{{WePay Introduction}}</p>
-        </article>
-        <article id="evernote" class="row page">
+        </div>
+        <div id="evernote" role="tabpanel" class="tab-pane">
           <h3>Evernote Hackathon</h3>
           <p>{{Evernote Hackathon Introduction}}</p>
           <h4>Out Product: NeverForget</h4>
           <p>Team Members: Me, 3 others</p>
           <p>{{NeverForget Introduction}}</p>
-        </article>
-        <article id="sunshine" class="row page">
+        </div>
+        <div id="sunshine" role="tabpanel" class="tab-pane">
           <h3>Sunshine Library Internship</h3>
           <p>{{Sunshine Library Internship Introduction}}</p>
-        </article>
-      </div><!-- div experience -->
-
-      <div id="education" class="undeveloped">
-        <header class="transition">
-          <h2>Education</h2>
-        </header>
-        <article class="row page">
-          <h3>University of California at Berkeley</h3>
-        </article>
-        <article class="row page">
-          <h3>Stanford University</h3>
-        </article>
-        <article class="row page">
-          <h3>Beijing No.4 High School</h3>
-        </article>
-      </div><!-- div education -->
-
-      <div id="skills" class="undeveloped page">
-        <header>
-          <h2>Skills</h2>
-        </header>
-        <article class="row">
-          <h3>Programming Languages</h3>
-        </article>
-        <article class="row">
-          <h3>Full Stack Web</h3>
-        </article>
-        <article class="row">
-          <h3>Version and Source Control</h3>
-        </article>
+        </div>
       </div>
-    </main><!-- main container -->
+    </div>
+
+    <div id="education" class="undeveloped">
+      <h2>Education</h2>
+      <div>
+        <h3>University of California at Berkeley</h3>
+      </div>
+      <div>
+        <h3>Stanford University</h3>
+      </div>
+      <div>
+        <h3>Beijing No.4 High School</h3>
+      </div>
+    </div><!-- div education -->
+
+    <div id="skills" class="undeveloped page">
+      <div>
+        <h2>Skills</h2>
+      </div>
+      <div>
+        <h3>Programming Languages</h3>
+      </div>
+      <div>
+        <h3>Full Stack Web</h3>
+      </div>
+      <div>
+        <h3>Version and Source Control</h3>
+      </div>
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/html5-boilerplate/js/plugins.js"></script>

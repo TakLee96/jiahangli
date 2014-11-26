@@ -2,6 +2,11 @@ body {
   padding-top: 51px;
 }
 
+h2 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
 .undeveloped {
   display: None;
 }
@@ -12,6 +17,9 @@ body {
   font-weight: 300;
 }
 
+/*********************
+ *** CSS for About ***
+ *********************/
 #about {
   background-image: url('../img/main.jpg');
   background-size: cover;
@@ -19,6 +27,7 @@ body {
   background-position: top left;
   background-origin: content-box;
   text-align: center;
+  margin: 0px;
 }
 
 #about-verticalCenter {
@@ -41,4 +50,33 @@ body {
   position: relative;
   transform: translateY(-50%);
   top: 60%;
+}
+
+/*************************
+*** CSS for Experience ***
+**************************/
+#experience {
+  background-color: rgba(100, 0, 200, 1);
+  color: white;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#experience a {
+  color: white;
+  text-decoration: underline;
+}
+
+#experience-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#experience-nav li.active a:link {
+  color: black;
+}
+
+#experience-nav a:hover,
+#experience-nav a:visited {
+  color: black;
 }

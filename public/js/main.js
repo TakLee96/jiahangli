@@ -1,6 +1,5 @@
 // Constants
 var NAV_BAR_HEIGHT = 51;
-var THRESHOLD_WIDTH = 710;
 
 // Google Analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -12,16 +11,18 @@ ga('create', 'UA-56469080-1', 'auto');
 ga('send', 'pageview');
 
 // Main
-window.handleOnResize = function () {
-  window.renderComponent(window.innerHeight, window.innerWidth);
-};
+function handleOnResize () {
+  var h = parseFloat(window.innerHeight);
+  var w = parseFloat(window.innerWidth);
+  renderAboutComponent(h, w);
+}
 
-window.renderComponent = function (stdh, stdw) {
-  var about_height = parseFloat(stdh) - NAV_BAR_HEIGHT;
+function renderAboutComponent (h, w) {
+  var about_height = h - NAV_BAR_HEIGHT;
   $('#about').css('height', about_height + 'px');
-};
+}
 
-window.handleAboutButtonOnClick = function () {
-  window.alert("Sorry, the developer sucks for now. \
+function handleAboutButtonOnClick () {
+  alert("Sorry, the developer sucks for now. \
   But the More tag on the nav bar still works...");
-};
+}
