@@ -1,16 +1,40 @@
-/*body {
-  background-color: black;
+body {
+  margin: 0px;
+  padding: 0px;
   color: white;
-}*/
+}
 
 h1, h2, h3, h4, h5, h6 {
+  padding: 10px;
+  margin: 0px;
   font-family: "Avenir Next W02 Thin", "Avenir Next",
   "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 
-p, footer {
+p {
+  padding: 20px;
+  margin: 0px;
+  font-size: 17pt;
   font-family: "Avenir Next W02 Thin", "Avenir Next",
   "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+}
+
+header {
+  background-color: rgba(73, 151, 255, 1);
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: rgba(73, 151, 255, 1);
+}
+
+#author {
+  text-align: right;
 }
