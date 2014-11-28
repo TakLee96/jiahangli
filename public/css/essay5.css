@@ -1,0 +1,16 @@
+/*body {
+  background-color: black;
+  color: white;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Avenir Next W02 Thin", "Avenir Next",
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+p, footer {
+  font-family: "Avenir Next W02 Thin", "Avenir Next",
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
