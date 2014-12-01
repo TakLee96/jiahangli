@@ -38,3 +38,33 @@ footer {
 #author {
   text-align: right;
 }
+
+.img-single {
+  width: 30%;
+  margin: 35%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.img-left {
+  float: left;
+  width: 30%;
+  margin: 10%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.img-right {
+  float: right;
+  width: 30%;
+  margin: 10%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#img-small {
+  width: 37.35%;
+  margin: 6.325%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
