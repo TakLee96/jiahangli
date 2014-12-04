@@ -1,3 +1,7 @@
+/*********************
+ ***** Main  CSS *****
+ *********************/
+
 body {
   padding-top: 51px;
 }
@@ -18,8 +22,7 @@ h2 {
 }
 
 #me {
-  height: 75vh;
-  transform: translateY(-15vh);
+  height: 50vh;
 }
 
 #me-wrapper {
@@ -65,9 +68,9 @@ h2 {
   top: 60%;
 }
 
-/*************************
-*** CSS for Experience ***
-**************************/
+/**************************
+ *** CSS for Experience ***
+ **************************/
 #experience {
   background-color: #545894;
   color: white;
@@ -94,9 +97,9 @@ h2 {
   color: #545894;
 }
 
-/*************************
-*** CSS for Education  ***
-**************************/
+/**************************
+ *** CSS for Education  ***
+ **************************/
 #education {
   background-color: #191C59;
   color: white;
@@ -123,9 +126,9 @@ h2 {
   color: #191C59;
 }
 
-/*************************
-***   CSS for Skills   ***
-**************************/
+/**************************
+ ***   CSS for Skills   ***
+ **************************/
 #skills {
   background-color: #080B3B;
   color: white;
@@ -138,9 +141,9 @@ h2 {
   text-decoration: underline;
 }
 
-/*************************
-***  CSS for Contact   ***
-**************************/
+/**************************
+ ***  CSS for Contact   ***
+ **************************/
 #contact {
   background-color: #7F81B1;
   color: white;

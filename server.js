@@ -1,16 +1,12 @@
-var db = [];
 var express = require('express');
-
 var app = express();
 
-app.use(function(req, res, next){
-  console.log("[%s] %s -> %s", Date().slice(0, 24),
-	            req.method, req.url);
-  if (next) next();
-});
+var logger = require('./logger');
 
-app.use(express.static(__dirname + '/public'));
+app.use(logger);
 
-var server = app.listen(80, function() {
-  console.log("[Server] Listening at %s", server.address().port);
+app.use(express.static('public'));
+
+app.listen(80, function () {
+  console.log("[Server] Listening on port %s\n", this.address().port);
 });

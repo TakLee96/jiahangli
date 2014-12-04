@@ -10,6 +10,8 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-56469080-1', 'auto');
 ga('send', 'pageview');
 
+$(document).ready(handleOnResize);
+
 // Main
 function handleOnResize () {
   var h = parseFloat(window.innerHeight);
@@ -20,9 +22,4 @@ function handleOnResize () {
 function renderAboutComponent (h, w) {
   var about_height = h - NAV_BAR_HEIGHT;
   $('#about').css('height', about_height + 'px');
-}
-
-function handleAboutButtonOnClick () {
-  alert("Sorry, the developer sucks for now. \
-  But the More tag on the nav bar still works...");
 }
