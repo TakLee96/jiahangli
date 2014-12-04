@@ -17,6 +17,19 @@ h2 {
   font-weight: 300;
 }
 
+#me {
+  height: 75vh;
+  transform: translateY(-15vh);
+}
+
+#me-wrapper {
+  margin: auto;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 /*********************
  *** CSS for About ***
  *********************/
@@ -123,4 +136,14 @@ h2 {
 #skills a {
   color: white;
   text-decoration: underline;
+}
+
+/*************************
+***  CSS for Contact   ***
+**************************/
+#contact {
+  background-color: #7F81B1;
+  color: white;
+  overflow: hidden;
+  padding: 20px;
 }
