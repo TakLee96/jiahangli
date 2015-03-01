@@ -150,3 +150,12 @@ h2 {
   overflow: hidden;
   padding: 20px;
 }
+
+#contact a {
+  color: white;
+  text-decoration: none;
+}
+
+#contact a:hover, a:visited {
+  text-decoration: underline;
+}
