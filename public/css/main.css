@@ -154,8 +154,6 @@ h2 {
 #contact a {
   color: white;
   text-decoration: none;
+	text-decoration: underline;
 }
 
-#contact a:hover, a:visited {
-  text-decoration: underline;
-}
