@@ -1,0 +1,16 @@
+#container {
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+#container-map {
+    height: auto;
+    position: absolute;
+}
+
+.box {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
