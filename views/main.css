@@ -1,0 +1,83 @@
+body {
+	background-image: url('/assets/bg2.jpg');
+	background-size: cover;
+	width: 550px;
+	margin: auto;
+	color: white;
+	font-family: Helvetica;
+	font-weight: 300;
+}
+
+.fadein {
+	animation: fadein 3s;
+	-webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+}
+
+#active {
+	font-weight: bold;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: lightslategray;
+}
+
+.center {
+	text-align: center;
+}
+
+#header {
+	font-size: 15pt;
+	margin-bottom: 50px;
+}
+
+#footer {
+	margin: 5px;
+}
+
+#me {
+	width: 200px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: serif;
+}
+
+#name {
+	font-size: 30pt;
+}
+
+#list {
+	font-size: 19pt;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}

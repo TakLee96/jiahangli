@@ -3,4 +3,4 @@ jiahangli
 
 ## JiaHang(Tak) Li's Personal Website ##
 
-Written with Plain HTML, CSS, JavaScript and Express.JS and Node.JS for the server side.
+Hand coded with HTML5, CSS3 and Bootstrap; back-end with Node.js, Express.js and Jade.

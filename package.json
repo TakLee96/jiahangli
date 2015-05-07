@@ -1,14 +1,15 @@
 {
   "name": "jiahangli",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "JiaHang(Tak) Li's Personal Website",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
-    "express": "^4.9.5"
+    "express": "^4.12.3",
+    "jade": "^1.9.2"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodejs server.js"
+    "start": "nodejs app.js"
   },
   "repository": {
     "type": "git",
