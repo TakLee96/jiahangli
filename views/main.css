@@ -1,11 +1,22 @@
 body {
 	background-image: url('/assets/bg2.jpg');
 	background-size: cover;
-	width: 550px;
 	margin: auto;
 	color: white;
 	font-family: Helvetica;
 	font-weight: 300;
+}
+
+.wide {
+	width: 82vw;
+}
+
+.narrow {
+	width: 60vw;
+}
+
+#about {
+	font-size: 5vm;
 }
 
 .fadein {
@@ -32,16 +43,18 @@ a:hover {
 }
 
 #header {
-	font-size: 15pt;
-	margin-bottom: 50px;
+	font-size: 3vw;
+	margin-bottom: 2vh;
 }
 
 #footer {
-	margin: 5px;
+	margin: 2vh;
+	display: inline-block;
+	width: 80vw;
 }
 
 #me {
-	width: 200px;
+	width: 25vw;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -52,11 +65,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #name {
-	font-size: 30pt;
+	font-size: 5vw;
 }
 
 #list {
-	font-size: 19pt;
+	font-size: 4vw;
+}
+
+#icons {
+	font-size: 4vw;
 }
 
 .left {
