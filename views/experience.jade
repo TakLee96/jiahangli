@@ -1,5 +1,219 @@
 extends layout
 
 block content
-	// TODO: fill experience in
-	p Sorry! Nothing here!
+	// The table to display images for links to modals
+	table.tbl
+		tr
+			td
+				a.img-link(data-toggle="modal" data-target="#TxtcoinModal")
+					img.img.img-left(src="/assets/Txtcoin.jpg")
+			td
+				table.tbl
+					tr
+						td
+							a.img-link(data-toggle="modal" data-target="#WisenModal")
+								img.img.img-right(src="/assets/Wisen.png")
+					tr
+						td
+							a.img-link(data-toggle="modal" data-target="#BitrunModal")
+								img.img.img-right(src="/assets/Bitrun.png")
+					tr
+						td
+							a.img-link(data-toggle="modal" data-target="#WepayModal")
+								img.img.img-right(src="/assets/Wepay.png")
+
+
+	// The Txtcoin Modal
+	.modal.fade#TxtcoinModal(tabindex="-1" role="dialog" aria-labelledby="TxtcoinModalLabel" aria-hidden="true")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+					h3.in-modal.modal-title#TxtcoinModalLabel Baybithack – Txtcoin
+				.modal-body.in-modal
+					ul.fa-ul
+						li
+							i.fa.fa-li.fa-clock-o
+							| Time: 2014/11/01
+						li
+							i.fa.fa-li.fa-map-marker
+							| Place: Sutardja Dai Hall, Berkeley
+						li
+							i.fa.fa-li.fa-users
+							| Members: Me, Philip Hayes
+						li
+							i.fa.fa-li.fa-trophy
+							| Event: Bay BitHack is a 24-hour long Hackathon dedicated to Bitcoin.
+						li
+							i.fa.fa-li.fa-desktop
+							| App: a backend system that supports creating bitcoin wallet account, sending and 
+							| receiving bitcoin payments, and even looking up qrcode for payment address all 
+							| via SMS text messages.
+						li
+							i.fa.fa-li.fa-file-code-o
+							| Stack: Node.js, Express.js, MongoDB, Twilio API [for SMS], BlockChain API [for bitcoin]
+						li
+							i.fa.fa-li.fa-user
+							| My Role: Mainly work on backend, setting up routing, designing user schema, 
+							| integrating APIs together, and do error handlings.
+						//li
+						//	i.fa.fa-li.fa-picture-o
+						//	| Image Gallery: [To Be Built...]
+						//li
+						//	i.fa.fa-li.fa-video-camera
+						//	| Video Gallery: [To Be Built...]
+				.modal-footer
+					a.btn.btn-primary(href="http://challengepost.com/software/txtcoin" target="_blank")
+						i.fa.fa-fw.fa-flag-checkered
+						| Challenge Post
+					a.btn.btn-success(href="https://github.com/phlip9/txtcoin" target="_blank")
+						i.fa.fa-fw.fa-github
+						| Github
+					button.btn.btn-warning(onclick="alert('Please text +1 (415) 691-2236 to try it out yourself!');")
+						i.fa.fa-fw.fa-phone-square
+						| Real-Time Demo
+
+	// The Bitrun Modal				
+	.modal.fade#BitrunModal(tabindex="-1" role="dialog" aria-labelledby="BitrunModalLabel" aria-hidden="true")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+					h3.in-modal.modal-title#BitrunModalLabel Herocity Hackathon – Bitrun
+				.modal-body.in-modal
+					ul.fa-ul
+						li
+							i.fa.fa-li.fa-clock-o
+							| Time: 2014/11/08
+						li
+							i.fa.fa-li.fa-map-marker
+							| Place: Draper University
+						li
+							i.fa.fa-li.fa-users
+							| Members: Me, Philip Hayes, Ryan Li
+						li
+							i.fa.fa-li.fa-trophy
+							| Event: Hero City Hack is a 24-hour hackathon that happens at Hero City, 
+							| Draper University. The main focus of the hackathon is bitcoin, health and 
+							| fitness, and business.
+						li
+							i.fa.fa-li.fa-desktop
+							| App: a cross-platform application (iPhone & Web) that lets the user bet certain 
+							| money with bitcoins to help motivate the user to achieve certain goal. 
+							| The iOS app can track exercise information.
+						li
+							i.fa.fa-li.fa-file-code-o
+							| Stack: React.js, Bootstrap, jQuery, Node.js, Express.js, Objective-C, Swift, AlomaFire, Coinbase API
+						li
+							i.fa.fa-li.fa-user
+							| My Role: Mainly work on web front end: web designing, trying out React.js and Bootstrap, 
+							| integrating Coinbase callback urls and communicating with server via jQuery ajax.
+				.modal-footer
+					a.btn.btn-primary(href="http://challengepost.com/software/bitrun" target="_blank")
+						i.fa.fa-fw.fa-flag-checkered
+						| Challenge Post
+					a.btn.btn-success(href="https://github.com/phlip9/bitrun" target="_blank")
+						i.fa.fa-fw.fa-github
+						| Github
+					a.btn.btn-warning(href="http://bitrunapp.herokuapp.com" target="_blank")
+						i.fa.fa-fw.fa-cloud
+						| Real-Time Demo
+
+	// The Wepay Modal	
+	.modal.fade#WepayModal(tabindex="-1" role="dialog" aria-labelledby="WepayModalLabel" aria-hidden="true")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+					h3.in-modal.modal-title#WepayModalLabel CalHacks – Wepay
+				.modal-body.in-modal
+					ul.fa-ul
+						li
+							i.fa.fa-li.fa-clock-o
+							| Time: 2014/10/03
+						li
+							i.fa.fa-li.fa-map-marker
+							| Place: Memorial Stadium, Berkeley
+						li
+							i.fa.fa-li.fa-users
+							| Members: Me, Philip Hayes, Ryan Li
+						li
+							i.fa.fa-li.fa-trophy
+							| Event: CalHacks is a 36-hour long Hackathon, with 1000+ hackers and 50+ sponsors.
+						li
+							i.fa.fa-li.fa-desktop
+							| App: a cross-platform application (iPhone & Web) that makes pooling money together 
+							| from friends and family quick and easy. The fundamentals of the app is essentially 
+							| making posts, @ friends and setting up payment methods.
+						li
+							i.fa.fa-li.fa-file-code-o
+							| Stack: Node.js, Express.js, MongoDB, Foundations, Angular.js, Objective-C, 
+							| Swift, AlomaFire, Facebook API, Venmo API
+						li
+							i.fa.fa-li.fa-user
+							| My Role: Mainly work on backend using Node.js, Express.js and MongoDB to build the 
+							| users and posts system. Trying out the MEAN stack.
+				.modal-footer
+					a.btn.btn-primary(href="http://challengepost.com/software/wepay" target="_blank")
+						i.fa.fa-fw.fa-flag-checkered
+						| Challenge Post
+					a.btn.btn-success(href="https://github.com/phlip9/wepay" target="_blank")
+						i.fa.fa-fw.fa-github
+						| Github
+					a.btn.btn-warning(href="http://wepay.herokuapp.com" target="_blank")
+						i.fa.fa-fw.fa-cloud
+						| Real-Time Demo
+
+	// The Wisen Modal
+	.modal.fade#WisenModal(tabindex="-1" role="dialog" aria-labelledby="WisenModalLabel" aria-hidden="true")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+					h3.in-modal.modal-title#WisenModalLabel Launch Hackathon – Wisen.io
+				.modal-body.in-modal
+					ul.fa-ul
+						li
+							i.fa.fa-li.fa-clock-o
+							| Time: 2015/02/27
+						li
+							i.fa.fa-li.fa-map-marker
+							| Place: Fort Mason, San Francisco
+						li
+							i.fa.fa-li.fa-users
+							| Members: Me, Ryan Li, Zizheng Tai, Sophia Liu
+						li
+							i.fa.fa-li.fa-trophy
+							| Event: Launch Hackthon is a 48-hours hackathon at Fort Mason, 
+							| San Francisco with over $100,000 investment prize and over 20 
+							| big companies have come to share their API with us programmers.
+						li
+							i.fa.fa-li.fa-desktop
+							| App: a cross-platform (iPhone & Web) P2P application that 
+							| introduces people who are free and willing to teach new stuff 
+							| and people who are willing to learn and pay a little money to 
+							| each other nearby.
+						li
+							i.fa.fa-li.fa-file-code-o
+							| Stack: Angular Boilerplate, Angular.js, Grunt.js, Uglify.js, LESS, 
+							| Twitter API, Google Map API, Firebase API [with geolocation], Sinch API
+						li
+							i.fa.fa-li.fa-user
+							| My Role: Exploring Angular Boilerplate and designing the better 
+							| structure to manipulate a large angular project. The routing, 
+							| user & geolocation logic, integrating with every API and retrieving 
+							| user location are all at the front end, so it was a big task for angular.
+				.modal-footer
+					a.btn.btn-primary(href="http://challengepost.com/software/wisen" target="_blank")
+						i.fa.fa-fw.fa-flag-checkered
+						| Challenge Post
+					a.btn.btn-success(href="https://github.com/TakLee96/wisen.io" target="_blank")
+						i.fa.fa-fw.fa-github
+						| Github
+					a.btn.btn-warning(href="http://wisen.mod.bz" target="_blank")
+						i.fa.fa-fw.fa-cloud
+						| Real-Time Demo

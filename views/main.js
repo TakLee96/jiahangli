@@ -6,3 +6,20 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-56469080-1', 'auto');
 ga('send', 'pageview');
+
+function handleEnter() {
+	this.classList.add('darken');
+	this.classList.remove('brighten');
+}
+
+function handleLeave() {
+	this.classList.add('brighten');
+	this.classList.remove('darken');
+}
+
+var images = document.getElementsByClassName('img');
+
+for (var i = 0; i < images.length; i++) {
+	images[i].addEventListener('mouseenter', handleEnter);
+	images[i].addEventListener('mouseleave', handleLeave);
+}

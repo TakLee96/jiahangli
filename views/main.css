@@ -42,9 +42,24 @@ a:hover {
 	text-align: center;
 }
 
+.about-font {
+	font-size: 2vw;
+}
+
+.about-font > p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 #header {
 	font-size: 3vw;
+	font-family: Helvetica;
+	font-weight: 100;
 	margin-bottom: 2vh;
+}
+
+#header > a {
+	text-decoration: none;
 }
 
 #footer {
@@ -84,6 +99,39 @@ h1, h2, h3, h4, h5, h6 {
 	float: right;
 }
 
+.tbl {
+	width: 100%;
+	background-color: transparent;
+}
+
+.img-left {
+	width: 29.30vw;
+	margin: 1vw;
+}
+
+.img-right {
+	width: 27.15vw;
+	margin: 1vw;
+}
+
+.img-link {
+	outline: 0;
+	cursor: pointer;
+}
+
+.in-modal {
+	color: black;
+}
+
+.in-modal > ul > li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.modal-footer > a {
+	text-decoration: none;
+}
+
 @keyframes fadein {
 	from { opacity: 0; }
 	to { opacity: 1; }
@@ -96,5 +144,49 @@ h1, h2, h3, h4, h5, h6 {
 
 @-moz-keyframes fadein {
 	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.darken {
+	animation: darken 0.5s;
+	-webkit-animation: darken 0.5s;
+	-moz-animation: darken 0.5s;
+	opacity: 0.5;
+}
+
+@keyframes darken {
+	from { opacity: 1; }
+	to { opacity: 0.5; }
+}
+
+@-webkit-keyframes darken {
+	from { opacity: 1; }
+	to { opacity: 0.5; }
+}
+
+@-moz-keyframes darken {
+	from { opacity: 1; }
+	to { opacity: 0.5; }
+}
+
+.brighten {
+	animation: brighten 0.5s;
+	-webkit-animation: brighten 0.5s;
+	-moz-animation: brighten 0.5s;
+	opacity: 1;
+}
+
+@keyframes brighten {
+	from { opacity: 0.5; }
+	to { opacity: 1; }
+}
+
+@-webkit-keyframes brighten {
+	from { opacity: 0.5; }
+	to { opacity: 1; }
+}
+
+@-moz-keyframes brighten {
+	from { opacity: 0.5; }
 	to { opacity: 1; }
 }
