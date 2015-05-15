@@ -43,7 +43,7 @@ a:hover {
 }
 
 .about-font {
-	font-size: 2vw;
+	font-size: 12pt;
 }
 
 .about-font > p {
@@ -62,17 +62,9 @@ a:hover {
 	text-decoration: none;
 }
 
-#footer {
-	margin: 2vh;
-	display: inline-block;
-	width: 80vw;
-}
-
 #me {
 	width: 25vw;
 	height: auto;
-	display: block;
-	margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,12 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 4vw;
 }
 
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
+#footer {
+	margin: 10px;
 }
 
 .tbl {
