@@ -9,17 +9,23 @@ html
 		link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 		style
 			include main.css
-	body(class=(pageTitle==="Home") ? "wide" : "narrow")
-		#header.center
-			a(href="/", id=(pageTitle === "Home") ? "active" : "") Home
-			span  / 
-			a(href="/about", id=(pageTitle === "About") ? "active" : "") About
-			span  / 
-			a(href="/academic", id=(pageTitle === "Academic") ? "active" : "") Academic
-			span  / 
-			a(href="/experience", id=(pageTitle === "Experience") ? "active" : "") Experience
-		.fadein
-			block content
+	- var isHome = (pageTitle === "Home")
+	body(class=(isHome) ? "" : "background")
+		img#loading(src="/assets/loading.gif" class=(isHome) ? "" : "hide")
+		#loaded(class=(isHome) ? "hide wide" : "narrow")
+			#header.center
+				a(href="/", id=(pageTitle === "Home") ? "active" : "") Home
+				span  / 
+				a(href="/about", id=(pageTitle === "About") ? "active" : "") About
+				span  / 
+				a(href="/academic", id=(pageTitle === "Academic") ? "active" : "") Academic
+				span  / 
+				a(href="/experience", id=(pageTitle === "Experience") ? "active" : "") Experience
+			.fadein
+				block content
+		if isHome
+			script
+				include preload.js
 		script(src="http://code.jquery.com/jquery-1.11.3.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
 		script

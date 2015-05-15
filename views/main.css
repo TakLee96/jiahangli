@@ -1,10 +1,27 @@
 body {
+	color: white;
+	font-family: "Avenir Next W02 Thin", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+#loading {
+	display: block;
+	margin: auto;
+	position: relative;
+	top: 30%;
+}
+
+.background {
 	background-image: url('/assets/bg2.jpg');
 	background-size: cover;
+}
+
+#loaded {
 	margin: auto;
-	color: white;
-	font-family: Helvetica;
-	font-weight: 300;
+}
+
+.hide {
+	display: none;
 }
 
 .wide {
@@ -53,8 +70,6 @@ a:hover {
 
 #header {
 	font-size: 3vw;
-	font-family: Helvetica;
-	font-weight: 100;
 	margin-bottom: 2vh;
 }
 
@@ -73,10 +88,20 @@ h1, h2, h3, h4, h5, h6 {
 
 #name {
 	font-size: 5vw;
+	margin-top: 0px;
+	margin-bottom: 22px;
 }
 
 #list {
 	font-size: 4vw;
+	font-family: "Avenir Next W02 Thin", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	margin-bottom: 22px;
+}
+
+#list > li {
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 #icons {
@@ -85,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
 	margin: 10px;
+	font-size: 10pt;
 }
 
 .tbl {
