@@ -89,19 +89,19 @@ h1, h2, h3, h4, h5, h6 {
 #name {
 	font-size: 5vw;
 	margin-top: 0px;
-	margin-bottom: 22px;
+	margin-bottom: 2.5vw;
 }
 
 #list {
 	font-size: 4vw;
 	font-family: "Avenir Next W02 Thin", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	margin-bottom: 22px;
+	margin-bottom: 2.5vw;
 }
 
 #list > li {
-	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
 }
 
 #icons {
@@ -147,18 +147,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
+	from { 
+		opacity: 0;
+		transform: translateY(10vw);
+	}
+	to { 
+		opacity: 1; 
+		transform: translateY(0);
+	}
 }
 
 @-webkit-keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
+	from { 
+		opacity: 0;
+		-webkit-transform: translateY(10vw);
+	}
+	to { 
+		opacity: 1; 
+		-webkit-transform: translateY(0);
+	}
 }
 
 @-moz-keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
+	from { 
+		opacity: 0;
+		-moz-transform: translateY(10vw);
+	}
+	to { 
+		opacity: 1; 
+		-moz-transform: translateY(0);
+	}
 }
 
 .darken {
