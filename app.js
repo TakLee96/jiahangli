@@ -38,6 +38,6 @@ app.use(function (req, res, next) {
 	res.status(404).end("Oops... The url you are visiting is not on this planet >_<");
 });
 
-app.listen(80, function () {
+app.listen(process.env.PORT || 80, function () {
 	console.log("[Server] listening on port %s\n", this.address().port);
 });
